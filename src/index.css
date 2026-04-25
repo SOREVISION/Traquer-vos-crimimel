@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@300;400;500;600;700;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Inter", sans-serif;
+  --font-mono: "ui-monospace", monospace;
+
+  --color-tactical-bg: #F1F5F9;
+  --color-tactical-surface: #FFFFFF;
+  --color-tactical-border: #E2E8F0;
+  --color-tactical-primary: #2563EB;
+  --color-tactical-secondary: #3B82F6;
+  --color-tactical-accent: #6366F1;
+  --color-tactical-text: #1E293B;
+  --color-tactical-text-muted: #64748B;
+}
+
+@layer utilities {
+  .polished-card {
+    background-color: var(--color-tactical-surface);
+    border: 1px solid var(--color-tactical-border);
+    border-radius: 12px;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  }
+}
+
+body {
+  background-color: var(--color-tactical-bg);
+  color: var(--color-tactical-text);
+  font-family: var(--font-sans);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
